@@ -323,7 +323,7 @@ class CurvedSlider3D {
     this.state.dragCurrent.y = y;
 
     // Apply drag movement
-    this.state.dragVelocity = -deltaX * this.options.dragSensitivity * 0.001;
+    this.state.dragVelocity = deltaX * this.options.dragSensitivity * 0.001;
     this.time += this.state.dragVelocity;
 
     // Check for infinite scroll boundaries during drag
